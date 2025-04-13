@@ -14,7 +14,7 @@ public class Actions {
 	private final String expectedUrlPrefix = "https://qa-tipalti-assignment.tipalti-pg.com/";
 
 	public Actions(WebDriver driver) {
-		this.driver = WebDriverManager.getInstance().getDriver(); // Get WebDriver instance from WebDriverManager
+		this.driver = driver;                                 // Get WebDriver passed as parameter in the method
 		this.wait = WebDriverManager.getInstance().getWait(); // Get WebDriverWait instance from WebDriverManager
 	}
 
